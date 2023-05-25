@@ -341,6 +341,15 @@ img {
     padding: 96px 0px 120px 0px;
     justify-content: center;
     gap: 24px;
+    /* margin-bottom: 72px; */
+    /* text-align: center; */
+}
+
+.filter-list {
+    display: flex;
+    /* padding: 96px 0px 120px 0px; */
+    justify-content: center;
+    gap: 24px;
     margin-bottom: 72px;
     /* text-align: center; */
 }
