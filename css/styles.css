@@ -337,11 +337,7 @@ img {
 /**------------- Filter btn------------- */
 
 .filter {
-    display: flex;
     padding: 96px 0px 120px 0px;
-    justify-content: center;
-    gap: 24px;
-
 }
 
 .filter-list {
