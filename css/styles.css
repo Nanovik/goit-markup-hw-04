@@ -203,7 +203,6 @@ img {
 .hero-wrap {
     margin: auto;
     max-width: 1440px;
-    /* background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/office.png); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -213,10 +212,6 @@ img {
 
 .feature {
     padding: 120px 0px;
-}
-
-.feature-container {
-    /* gap: 24px; */
 }
 
 .feature-list {
@@ -258,7 +253,6 @@ img {
     width: 100%;
     background: #F4F4FD;
     border-radius: 4px;
-    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -384,7 +378,6 @@ img {
 .team-soc-link:hover,
 .team-soc-link:focus {
     background-color: #404bbf;
-    /* color: #404BBF; */
 }
 
 .team-soc-icon {
@@ -496,8 +489,6 @@ img {
 }
 
 .header-customers {
-    /* font-family: 'Roboto';
-    font-style: normal; */
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -551,7 +542,6 @@ img {
 .footer-container {
     display: flex;
     align-items: baseline;
-    /* gap: 120px; */
 }
 
 .footer-blok {
