@@ -76,6 +76,9 @@ img {
 .header {
     background-color: var(--bg-color);
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -153,6 +156,12 @@ img {
     background: #2E2F42;
     padding: 188px 0px;
     text-align: center;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/office.png);
+    margin: auto;
+    max-width: 1440px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .hero-title {
@@ -194,7 +203,7 @@ img {
 .hero-wrap {
     margin: auto;
     max-width: 1440px;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/office.png);
+    /* background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/office.png); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -230,7 +239,6 @@ img {
     letter-spacing: 0.02em;
     color: var(--normal-title-color);
     margin-bottom: 8px;
-    margin-top: 8px;
     /* flex-basis: calc(100% / 3 - var(--card-set-gap));
     margin-left: var(--card-set-gap);
     margin-top: var(--card-set-gap); */
@@ -248,7 +256,6 @@ img {
 
 .feature-icon {
     width: 100%;
-    /* height: 100%; */
     background: #F4F4FD;
     border-radius: 4px;
     /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
@@ -256,6 +263,7 @@ img {
     align-items: center;
     justify-content: center;
     padding: 24px 0;
+    margin-bottom: 8px;
 }
 
 /**-------------- IMG------------------ */
@@ -309,6 +317,13 @@ img {
 
 .team-list-name {
     padding: 32px 16px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    z-index: 0;
 }
 
 .team-head {
@@ -363,13 +378,15 @@ img {
     justify-content: center;
 }
 
-.team-soc-icon {
-    fill: #ffffff;
+.team-soc-link:hover,
+.team-soc-link:focus {
+    background-color: #404bbf;
+    /* color: #404BBF; */
 }
 
-/* .team-soc-link:hover {
-    background-color: teal;
-} */
+.team-soc-icon {
+    fill: var(--first-btn-bg-color);
+}
 
 /**------------- Filter btn------------- */
 
@@ -385,11 +402,8 @@ img {
 }
 
 .filter-btn {
-    /* box-sizing: border-box; */
     flex-direction: row;
     display: flex;
-    /* align-items: center; */
-    /* justify-content: center; */
     background: var(--first-btn-bg-color);
     padding: 12px 24px;
     border: 1px solid #E7E9FC;
@@ -411,10 +425,11 @@ img {
 .filter-btn:hover,
 .filter-btn:focus {
     background-color: var(--second-btn-bg-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 2px 1px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
     color: var(--second-btn-color);
     border: 1px solid transparent
-    /* text-align: center; */
-
 }
 
 /**------------- Project card------------- */
@@ -441,6 +456,17 @@ img {
     /* flex-basis: calc(100% / 3 - var(--card-set-gap));
     margin-left: var(--card-set-gap);
     margin-top: var(--card-set-gap); */
+}
+
+.card-list-project {
+    display: block;
+}
+
+.card-list-project:hover,
+.card-list-project:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .card-list-h {
@@ -500,9 +526,15 @@ img {
     color: #8E8F99;
 }
 
+.customers-link:hover,
+.customers-link:focus {
+    border-color: #404BBF;
+    color: #404BBF;
+}
+
 .customers-icon {
-    width: 104px;
-    height: 56px;
+    /* width: 104px;
+    height: 56px; */
     fill: currentColor;
 }
 
@@ -515,12 +547,15 @@ img {
 
 .footer-container {
     display: flex;
-    gap: 120px;
+    align-items: baseline;
+    /* gap: 120px; */
 }
 
 .footer-blok {
     padding: 0;
     margin: 0;
+    margin-right: 120px;
+    /* gap: 120px; */
 }
 
 .footer-logo {
@@ -560,12 +595,13 @@ img {
     letter-spacing: 0.02em;
     color: #FFFFFF;
     margin-right: auto;
+    margin-bottom: 16px;
 }
 
 .footer-list {
     display: flex;
     margin-right: auto;
-    gap: 24px;
+    gap: 16px;
 }
 
 .footer-item {
@@ -582,6 +618,11 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+    background-color: #31D0AA;
 }
 
 .footer-icon {
